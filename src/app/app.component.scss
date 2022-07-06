@@ -31,15 +31,9 @@ p {
   border: 0.015rem solid #dedede;
   padding: 2rem;
   background-color: #dedede;
-  height: calc(100vh - 220px);
 
 }
-@media (max-width: 768px) {
-  .section-form {
-    height: calc(100vh - 120px);
 
-  }
-}
 .container-form {
   display: flex;
   justify-content: center;
