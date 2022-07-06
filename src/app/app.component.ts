@@ -30,9 +30,10 @@ export class AppComponent {
 
   get(event: any) {
     event.preventDefault();
+    const cepFormatado = this.cep.replace(/\D/g, '');
     if(this.code && this.cep){
       this.bpostService
-      .getBpost(this.code, this.cep)
+      .getBpost(this.code, cepFormatado)
       .subscribe((bpost) => {
           if(bpost.items){
             const code= bpost.items[0].webformUrl;
