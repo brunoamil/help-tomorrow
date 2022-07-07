@@ -4,6 +4,7 @@
       <div class="container-header">
         <h1 class="titulo">?HELP <span class="subtitulo">TOMORROW</span></h1>
         <h2>Busque seu código da Treasure Case dos correios de forma fácil e rápida.</h2>
+        <p style="text-align: right; font-weight: bold; font-size: 1.10rem;">Desenvolvido por <a href="https://www.instagram.com/brunoamill/" style="color: #d63a76; text-decoration: none;">@brunoamill</a></p>
       </div>
       <form (submit)="get($event)" class="container-form">
         <div class="form-input">
@@ -16,7 +17,7 @@
         </div>
         <div class="form-input">
           <button type="submit">
-            Rastrear Pulseira
+            Buscar código dos Correios
           </button>
         </div>
     </form>
@@ -29,33 +30,26 @@
       <p style="font-size: 0.88rem; margin-top: 2rem;">Exemplo: barcode=EA223322324BE</p>
     </div>
     <div  style="margin-top: 2rem;">
-      <p  style="color: red; font-weight: bold; margin-top: 2rem;">CASE NÃO POSTADA PELO BPOST - ESTA É A MENSAGEM QUE IRÁ APARECER:</p>
+      <p  style="font-weight: bold; margin-top: 2rem;">1. Treasure Case não foi despachada pelo Bpost- esta é a mensagem que irá retornar:</p>
       <pre>
         "error": "NO_DATA_FOUND"
     </pre>
-      <p style="text-transform: uppercase;">Localize no código retornado a informação barcode, <b>exemplo: barcode=EA170256270BE</b>. Este é seu código dos CORREIOS.</p>
-      <p style="text-transform: uppercase; margin-top: 1rem;">O código é igual a este:</p>
+      <p style="font-weight: bold;">2. Localize no código retornado a informação barcode, <b>exemplo: barcode=EA170256270BE</b>.</p>
+      <p style="margin-top: 1rem;">2.1 - Aperte <b>Ctrl + F </b> e digite barcode, encontrará mais rápido - ele repete 3 vezes no código.</p>
 
-      <code class="codeBpost">
-        <p style="margin-top: 2rem;">"webformUrl":</p>
-          <p style="margin-left: 30px;">"en": barcode=EA123456789BE",
-          <p style="margin-left: 30px;">"fr": "barcode=EA123456789BE",</p>
-          <p style="margin-left: 30px;">"nl": "barcode=EA123456789BE"</p>
-        </code>
-    </div>
+</div>
     <div style="margin-top: 3rem;">
       <p style="font-weight: bold;">Atenção:</p>
       <ul>
-        <li>Caso não encontre no site dos Correios, é porque a case ainda não é possível rastrear, mas guarde seu barcode não irá mudar.</li>
+        <li>Caso não localize no site dos Correios, é porque a case ainda não chegou no Brasil, guarde seu código que será identificado em breve..</li>
         <li>Baixe o Aplicativo Rastreio fácil e cadastre seu barcode. Quando o correio identificar sua case o app irá notificar você.</li>
-        <li>Caso seu pedido retorne vazio, é porque não foi despachado ainda pelo bpost, aguarde mais uns dias.</li>
       </ul>
     </div>
   </section>
 
   <footer>
-    <p style="margin-top: 0.35rem;">Desenvolvido por <span style="color: #d63a76; text-decoration: none;">Bruno Lima</span> <br> <br></p>
-    <p>Querendo me seguir no Instagram, <a href="" style="color: #d63a76; text-decoration: none;">@brunoamill</a><br> <i>Sou um eterno apaixonado por Tomorrowland e League of Legends</i><br>💙</p>
+    <p style="margin-top: 2rem;"><i>Querendo me seguir no instagram, agradeço haha <a href="https://www.instagram.com/brunoamill/" style="color: #d63a76; text-decoration: none;">@brunoamill</a> </i><br>💙</p>
+    <p style="margin-top: 2rem; margin-bottom: 2rem;"><i>Sou um eterno apaixonado por Tomorrowland e League of Legends</i><br>💙</p>
   </footer>
 </div>
 
