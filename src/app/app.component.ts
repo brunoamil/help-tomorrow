@@ -32,20 +32,7 @@ export class AppComponent {
     event.preventDefault();
     const cepFormatado = this.cep.replace(/\D/g, '');
     if(this.code && this.cep){
-      this.bpostService
-      .getBpost(this.code, cepFormatado)
-      .subscribe((bpost) => {
-          if(bpost.items){
-            const code= bpost.items[0].webformUrl;
-            this.codeKey = Object.values(code)[0];
-            this.codigoRastreioBr = this.codeKey;
-          } else {
-            this.messageError = 'Desculpa não foi possível localizar seu código, aparentemente só vai chegar junto com o Aftermovie/2022';
-          }
-
-
-      });
-
+      window.open(`https://track.bpost.cloud/track/items?itemIdentifier=${this.code}&postalCode=${cepFormatado}`);
     } else {
       alert('Por favor, informe o número de compra e o CEP')
     }

@@ -16,7 +16,7 @@
         </div>
         <div class="form-input">
           <button type="submit">
-            Buscar código BR
+            Rastrear Pulseira
           </button>
         </div>
     </form>
@@ -27,6 +27,20 @@
       <p style="font-size: 1rem; margin-bottom: 0.55rem;"><span style="font-weight: bold; ">Seu Código dos Correios é o barcode:</span></p>
       <p style="font-size: 1rem;">{{codigoRastreioBr}}</p>
       <p style="font-size: 0.88rem; margin-top: 2rem;">Exemplo: barcode=EA223322324BE</p>
+    </div>
+    <div  style="margin-top: 2rem;">
+      <p  style="color: red; font-weight: bold; margin-top: 2rem;">CASE NÃO POSTADA PELO BPOST - ESTA É A MENSAGEM QUE IRÁ APARECER:</p>
+        <pre>
+          "error": "NO_DATA_FOUND"
+      </pre>
+      <p style="text-transform: uppercase; font-weight: bold;">Busque nas informações que retornaram esta informação e pegue o último código barcode=EA170256270BE</p>
+      <p style="text-transform: uppercase; font-weight: bold; margin-top: 0.25rem;"><span style="color: green;">barcode</span> é o seu código para localizar no site dos CORREIOS. </p>
+        <code class="codeBpost">
+        <p style="margin-top: 2rem;">"webformUrl":</p>
+          <p style="margin-left: 30px;">"en": barcode=EA170256270BE",
+          <p style="margin-left: 30px;">"fr": "barcode=EA170256270BE",</p>
+          <p style="margin-left: 30px;">"nl": "barcode=EA170256270BE"</p>
+        </code>
     </div>
     <div style="margin-top: 3rem;">
       <p style="font-weight: bold;">Atenção:</p>
